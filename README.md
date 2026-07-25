@@ -23,3 +23,15 @@ Membuat komponen header/hero (`app/components/Header.tsx`) dengan fitur:
 
 Komponen ini dirender di `app/page.tsx` setelah `Navbar`, dan `app/layout.tsx` ditambahkan class `leading-8 overflow-x-hidden` untuk mendukung layout halaman penuh.
 
+### About (Tentang Saya)
+
+Membuat komponen About (`app/components/About.tsx`) dengan fitur:
+
+- Section dengan id `about` (target scroll dari Navbar) berisi heading "Introduction" dan judul "About me".
+- Foto profil (`assets.user_image`) menggunakan `next/image`, disusun berdampingan dengan konten teks lewat layout flex (`flex-col` di mobile, `lg:flex-row` di desktop).
+- Paragraf deskripsi singkat pengalaman sebagai Frontend Developer.
+- Grid info (`infoList` dari `assets/assets`) yang menampilkan ikon, judul, dan deskripsi tiap poin (mis. pengalaman, edukasi, project) dalam kartu dengan efek hover (`-translate-y-1`, `hover:shadow-black`).
+- Daftar "Tools I use" (`toolsData` dari `assets/assets`) berupa ikon-ikon tool dalam kotak dengan efek hover yang sama.
+
+Komponen ini dirender di `app/page.tsx` setelah `Header`.
+
