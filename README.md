@@ -35,3 +35,14 @@ Membuat komponen About (`app/components/About.tsx`) dengan fitur:
 
 Komponen ini dirender di `app/page.tsx` setelah `Header`.
 
+### Services (Layanan)
+
+Membuat komponen Services (`app/components/Services.tsx`) dengan fitur:
+
+- Section dengan id `Services` (target scroll dari Navbar) berisi heading "What I offer" dan judul "My Services".
+- Paragraf deskripsi singkat tentang pengalaman sebagai frontend developer.
+- Grid daftar layanan (`serviceData` dari `assets/assets`) yang menampilkan ikon, judul, deskripsi, dan link "Read more" tiap layanan dalam kartu dengan efek hover (`-translate-y-1`, `hover:shadow-black`, `hover:bg-light-hover`).
+- Layout grid menggunakan class custom `grid-cols-auto`, didefinisikan lewat `--grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr))` di `@theme` (`app/globals.css`) — mengikuti cara konfigurasi Tailwind CSS v4 (tanpa `tailwind.config.mjs`).
+
+Komponen ini dirender di `app/page.tsx` setelah `About`.
+
