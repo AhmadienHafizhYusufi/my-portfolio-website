@@ -86,3 +86,22 @@ memiliki atribut `id`, sehingga smooth-scroll ke `#work` dari Navbar belum
 berfungsi.
 
 Komponen ini dirender di `app/page.tsx` setelah `Services`.
+
+### Contact (Formulir Kontak)
+
+Membuat komponen Contact (`app/components/Contact.tsx`) dengan fitur:
+
+- Section dengan id `contact` (target scroll dari Navbar) berisi heading
+  "Connect with me" dan judul "Get in touch", dengan background dekoratif
+  (`footer-bg-color.png`).
+- Form dengan input `name`, `email`, dan `textarea` `message` (semua
+  `required`), dikirim lewat handler `onSubmit` menggunakan layanan
+  [Web3Forms](https://web3forms.com/) — data form (`FormData`) di-POST ke
+  endpoint `https://api.web3forms.com/submit` beserta `access_key`, tanpa
+  memerlukan backend sendiri.
+- Status pengiriman ("Sending....", sukses, atau pesan error dari API)
+  ditampilkan lewat state `result` di bawah tombol submit, dan form direset
+  otomatis setelah berhasil terkirim.
+- Tombol "Submit now" dengan ikon panah kanan (`assets.right_arrow_white`).
+
+Komponen ini dirender di `app/page.tsx` setelah `Work`.
