@@ -105,3 +105,19 @@ Membuat komponen Contact (`app/components/Contact.tsx`) dengan fitur:
 - Tombol "Submit now" dengan ikon panah kanan (`assets.right_arrow_white`).
 
 Komponen ini dirender di `app/page.tsx` setelah `Work`.
+
+### Footer
+
+Membuat komponen Footer (`app/components/Footer.tsx`) dengan fitur:
+
+- Logo (`assets.logo`) dan alamat email dengan ikon (`assets.mail_icon`)
+  ditampilkan center di bagian atas footer.
+- Baris bawah dipisahkan garis (`border-t`), berisi teks copyright dan daftar
+  link sosial (GitHub, LinkedIn, Twitter) yang terbuka di tab baru
+  (`target="_blank"`), disusun berdampingan lewat `sm:flex justify-between`.
+
+Catatan: teks copyright dan alamat email masih memakai data placeholder
+("William Mark", `william@gmail.com`), berbeda dari link sosial yang sudah
+mengarah ke akun asli.
+
+Komponen ini dirender di `app/page.tsx` setelah `Contact`.
